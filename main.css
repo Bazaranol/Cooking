@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+html,body{
+    height: 100%;
+}
+button{
+  /* border-color: rgb(33,147,90); */
+}
+button.createRecipe{
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+button.createRecipe:hover{background: rgb(53, 167, 110); }
+button.createRecipe:active{
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+img{
+  width: 100%;
+}
+h1,h3{
+  position: relative;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.subtitleMain{
+opacity: 0.5;
+}
+header{
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.main-menu {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+.main-menu:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: -20px;
+  background: radial-gradient(white 0%, white 70%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%) 0 -10px;
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+.main-menu li {display: inline-block;}
+.main-menu a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #777777;
+  transition: .3s linear;
+  position: relative;
+}
+.main-menu a:before,
+.main-menu a:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F58262;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.main-menu a:before {left: 5px;}
+.main-menu a:after {right: 5px;}
+.main-menu a.current:before,
+.main-menu a.current:after,
+.main-menu a:hover:before, 
+.main-menu a:hover:after {opacity: 1;}
+.main-menu a.current,
+.main-menu a:hover {color: #F58262;}
+@media(max-width:680px) {
+  .main-menu li {display: block;}
+}
