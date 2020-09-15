@@ -2,13 +2,19 @@
 html,body{
     height: 100%;
 }
-/* button{
-  border-color: rgb(33,147,90);
-} */
+body{
+  display: flex;
+  flex-direction: column;
+}
+h2{
+  text-align: center;
+}
+
 .icons{
   height: 32px;
   width: 32px;
 }
+
 button.createRecipe{
   font-weight: 700;
   color: white;
@@ -24,14 +30,21 @@ button.createRecipe:active{
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
 }
+div.container button.createRecipe{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+}
 img{
   width: 100%;
 }
-h1,h3{
+h1,h2,h3{
   position: relative;
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 .img-fluid1{
   max-width: 100%;
@@ -39,3 +52,42 @@ h1,h3{
 }
 .subtitleMain{
 opacity: 0.5;
+}
+
+/* Карточки */
+.card-img-h{
+	height: 250px;
+}
+p.card-text, .card-title{
+    font-size: larger;
+     color: black;
+     -webkit-text-stroke: 0.2px black;
+     -webkit-text-fill-color: white;
+}
+.carousel-caption{
+  color: black;
+  font-size: 25pt;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+.card-img-overlay{
+    background-color:rgba(0,0,0,.2);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+.content{
+  flex: 1 0 auto;
+}
+footer{
+  /* font-size: 15px; */
+  text-align: center;
+  flex-shrink: 0;
+  padding: 15px;
+  background-color: #e3f2fd;
+}
+.footerContent{
+    opacity: 0.5;
+}

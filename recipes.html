@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <!-- Fonts icons -->
+   <link rel="stylesheet" href="/sources/fontawesome-free-5.14.0-web/css/all.css">
+    <title>Recipes</title>
+</head>
+<body>
+     <!-- шапка -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
+           <img src="/sources/hamburger.png" alt="Logo" class="icons">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/main.html">Название</a>
+                <a class="nav-item nav-link active" href="#">Рецепты <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/aboutMe.html">Обо мне</a>
+                <a class="nav-item nav-link" href="/contacts.html">Контакты</a>
+              </div>
+            </div>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Название" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+              </form>
+        </nav>
+    </header>
+
+    <!-- основа -->
+    <main>
+        <!-- Заголовок + кнопка -->
+        <div class="container">
+            <h2>Ниже представлены карточки с рецептами и пока что нереализованная кнопка создания этих карточек</h2>
+            <button class="createRecipe">кнопка</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="container cards" style="margin-bottom: 200px">
+			<h1 class="text-dark text-center display-1" style="margin-bottom: 100px; margin-top: 100px;"><b>Карточки рецептов</b> </h1>
+			<div class="card-deck">
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic1.jpg" alt="Card image">
+				  <div class="card-img-overlay">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+				</div>
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic2.jpg" alt="Card image">
+				  <div class="card-img-overlay"> 
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+				</div>
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic3.jpg" alt="Card image">
+				  <div class="card-img-overlay">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+                </div>
+            </div>
+            <!-- Дублирую потом по-другому сделаю-->
+            <div class="card-deck" style="padding-top: 30px;">
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic1.jpg" alt="Card image">
+				  <div class="card-img-overlay">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+				</div>
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic2.jpg" alt="Card image">
+				  <div class="card-img-overlay"> 
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+				</div>
+				<div class="card bg-dark text-white">
+				  <img class="card-img card-img-h" src="/sources/Cards/Pic3.jpg" alt="Card image">
+				  <div class="card-img-overlay">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				    <p class="card-text">Last updated 3 mins ago</p>
+				  </div>
+                </div>
+			</div>
+			
+		</div>
+    </main>
+
+<!-- подвал -->
+<footer>
+    <div class="footerContent">
+        Created by Roman Sidorkin 2020 
+       <a href="https://github.com/Bazaranol/Cooking"> <i class="fab fa-github fa-2x"></i></a>
+       <a href="https://vk.com/rot_photo_mark"><i class="fab fa-vk fa-2x"</i></i> </a>
+       <a href="https://www.instagram.com/ronce_fou/"><i class="fab fa-instagram fa-2x"></i></a>
+       <a href=""><i class="fab fa-bootstrap fa-2x"></i></a>
+       <a href=""><i class="fab fa-font-awesome fa-2x"></i></a> 
+    </div>
+</footer>
+
+    <!--  JQ, Popper JS, bootstrap scripts  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
