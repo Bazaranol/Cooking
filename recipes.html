@@ -11,6 +11,7 @@
     <title>Recipes</title>
 </head>
 <body>
+  <div class="content">
      <!-- шапка -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
@@ -20,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/main.html">Название</a>
+                <a class="nav-item nav-link" href="/main.html">Cooking</a>
                 <a class="nav-item nav-link active" href="#">Рецепты <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/aboutMe.html">Обо мне</a>
                 <a class="nav-item nav-link" href="/contacts.html">Контакты</a>
@@ -38,9 +39,9 @@
         <!-- Заголовок + кнопка -->
         <div class="container">
             <h2>Ниже представлены карточки с рецептами и пока что нереализованная кнопка создания этих карточек</h2>
-            <button class="createRecipe">кнопка</button>
+            <button id="addCard" class="createRecipe">кнопка</button>
         </div>
-
+<div class="Exp"></div>
         <!-- Cards -->
         <div class="container cards" style="margin-bottom: 200px">
 			<h1 class="text-dark text-center display-1" style="margin-bottom: 100px; margin-top: 100px;"><b>Карточки рецептов</b> </h1>
@@ -73,7 +74,7 @@
             <!-- Дублирую потом по-другому сделаю-->
             <div class="card-deck" style="padding-top: 30px;">
 				<div class="card bg-dark text-white">
-				  <img class="card-img card-img-h" src="/sources/Cards/Pic1.jpg" alt="Card image">
+				  <img class="card-img card-img-h" src="/sources/Swiper sources/10.jpg" alt="Card image">
 				  <div class="card-img-overlay">
 				    <h5 class="card-title">Card title</h5>
 				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -81,7 +82,7 @@
 				  </div>
 				</div>
 				<div class="card bg-dark text-white">
-				  <img class="card-img card-img-h" src="/sources/Cards/Pic2.jpg" alt="Card image">
+				  <img class="card-img card-img-h" src="/sources/Swiper sources/11.jpg" alt="Card image">
 				  <div class="card-img-overlay"> 
 				    <h5 class="card-title">Card title</h5>
 				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -89,7 +90,7 @@
 				  </div>
 				</div>
 				<div class="card bg-dark text-white">
-				  <img class="card-img card-img-h" src="/sources/Cards/Pic3.jpg" alt="Card image">
+				  <img class="card-img card-img-h" src="/sources/Swiper sources/12.jpg" alt="Card image">
 				  <div class="card-img-overlay">
 				    <h5 class="card-title">Card title</h5>
 				    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -117,6 +118,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script src="/main.js"></script>
+  </div>
 </body>
 </html>

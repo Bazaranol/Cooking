@@ -5,6 +5,7 @@ html,body{
 body{
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 h2{
   text-align: center;
@@ -79,15 +80,53 @@ p.card-text, .card-title{
     left:0;
 }
 .content{
-  flex: 1 0 auto;
+  flex: 1;
 }
 footer{
-  /* font-size: 15px; */
   text-align: center;
-  flex-shrink: 0;
   padding: 15px;
   background-color: #e3f2fd;
 }
 .footerContent{
     opacity: 0.5;
+}
+/* swiper */
+.swiper-container1 {
+	width: 100%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.swiper-container2 {
+	width: 100%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.slideH1{
+  height: 200px !important;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 10%;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 }
