@@ -39,8 +39,147 @@
         <!-- Заголовок + кнопка -->
         <div class="container">
             <h2>Ниже представлены карточки с рецептами и пока что нереализованная кнопка создания этих карточек</h2>
-            <button id="addCard" class="createRecipe">кнопка</button>
+            <button id="addCard" data-toggle="modal" data-target="#CreateRecipeModal" class="createRecipe">кнопка</button>
         </div>
+        <!-- Модальное окно -->
+        <div class="modal fade" id="CreateRecipeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Новый рецепт</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="subtitleMain">Здесь можно будет создавать новые рецепты</h4>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Название</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Категория</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Завтраки</option>
+                      <option>Бульоны</option>
+                      <option>Закуски</option>
+                      <option>Напитки</option>
+                      <option>Основные блюда</option>
+                      <option>Салаты</option>
+                      <option>Соусы и маринады</option>
+                      <option>Выпечка</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Количество порций</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <h4>Время приготовления</h4>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Часов</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0">
+                    <label for="exampleFormControlSelect1">Минут</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>0</option>
+                      <option>5</option>
+                      <option>10</option>
+                      <option>15</option>
+                      <option>20</option>
+                      <option>25</option>
+                      <option>30</option>
+                      <option>35</option>
+                      <option>40</option>
+                      <option>45</option>
+                      <option>50</option>
+                      <option>55</option>
+                    </select>
+                  </div>
+                  <h4>Ингредиенты</h4>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Название">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <select id="inputState" class="form-control">
+                          <option selected>Грамм</option>
+                          <option>Килограмм</option>
+                          <option>Головка</option>
+                          <option>Банка</option>
+                          <option>Зубчик</option>
+                          <option>Кусок</option>
+                          <option>Литр</option>
+                          <option>Миллилитр</option>
+                          <option>По вкусу</option>
+                          <option>Стакан</option>
+                          <option>Штука</option>
+                          <option>Щепотка</option>
+                          <option>Ст.ложка</option>
+                          <option>Ч.ложка</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="inputZip" placeholder="К-во">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Название">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <select id="inputState" class="form-control">
+                          <option selected>Грамм</option>
+                          <option>Килограмм</option>
+                          <option>Головка</option>
+                          <option>Банка</option>
+                          <option>Зубчик</option>
+                          <option>Кусок</option>
+                          <option>Литр</option>
+                          <option>Миллилитр</option>
+                          <option>По вкусу</option>
+                          <option>Стакан</option>
+                          <option>Штука</option>
+                          <option>Щепотка</option>
+                          <option>Ст.ложка</option>
+                          <option>Ч.ложка</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <input type="text" class="form-control" id="inputZip" placeholder="К-во">
+                      </div>
+                    </div>
+                  </div>
+                  <h4>Описание</h4>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Инструкция</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Примечание</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Необязательно"></textarea>
+                  </div>
+                </form>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Не публиковать</button>
+                <button type="button" class="btn btn-primary">Опубликовать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 <div class="Exp"></div>
         <!-- Cards -->
         <div class="container cards" style="margin-bottom: 200px">
